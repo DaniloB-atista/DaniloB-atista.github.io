@@ -1,38 +1,120 @@
+/*GERAL*/
 html, body{
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.margin{
+    margin: 0px;
 }
 
-b{
+a, ul{
+    text-decoration: none;
+}
+
+/*TITULOS E AFINS*/
+h3{
     font-size: 2rem;
     font-weight: bolder;
     margin: 2% 0rem 2rem 0rem;
-    text-align: center;
+    text-align-last: center;
+    
 }
 
+.conteudo{
+    padding: 2%;
+    float: left;
+    color: #00070d;
+}
 
+#acao{
+    color: #97933a;
+    border: 0.1rem #97933a solid;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+}
 
-h1{
+#titulo{
+    padding-top: 20%;
+    color: #ce5e02;
+    font-size: 70px;
+    letter-spacing: -5px;
+}
+
+.justificado{
+    text-align: justify;
+}
+
+.coluna{
+    float: left;
+    padding: 0rem 5%;
+    position: relative;
+}
+
+.dois{
+    width: 40%;
+    margin-bottom: 15px;
     color: #000000;
-    font-weight: 520;
-    cursor: default;
-    text-align: center;
-    text-transform: uppercase;
+    font-size: 16.5px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: .5px
+}
+.quatro{
+    padding: 0 25%;
+    margin-bottom: 15px;
+    color: #000000;
+    font-size: 16.5px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: .5px
+}
 
+.center{
+    text-align: center;
+}
+
+.ODS12 iframe{
+    margin-top: 6.2vh;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.cont{
+    margin-bottom: 15px;
+    color: #000000;
+    font-size: 16.5px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: .5px
+}
+
+#inic{
+    margin-bottom: 15px;
+    color: #000000;
+    font-size: 16.5px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: .5px
+}
+
+.cinco{
+    width: 40%;
 }
 
 
-
-.Central{
-    background: url("Img/pexels-photo.jpeg");
+/*FUNDO*/
+#Central{
+    background: url("Img/forest-5524525_1920.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
-    
+    display: flow-root;
+    text-align: center;
 }
-
-
 
 hr{
     width: 3rem;
@@ -40,16 +122,83 @@ hr{
     text-align: center;
 }
 
-.conteúdo{
-    padding: 2%;
-    float: left;
-    color: #00070d;
+.icone{
+    width: 51px;
 }
 
+/*BARRA DE NAVEGAÇÃO*/
 
-/*
-    # para chamar ids
-    . para chamar classes
-    clear: both; cancela o efeito das floats
-*/
+#logo{
+    width: 330px;
+    position: absolute;
+    top: 5px;
+    margin-left: 1.3%;
+}
 
+#menu{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+}
+
+header{
+    background-color: #330066;
+    color: white;
+    height: 5.5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+header li{
+    float: left;
+    padding: 2rem .8rem;
+    font-size: 18px;
+}
+
+header li:hover{
+    background-color: #b34700;
+    padding: 1.5rem 1rem 2.5rem 1rem;
+    transition: all .4s linear;
+}
+
+header li a{
+    color: white
+}
+
+/*RODAPÉ*/
+
+#rodape a{
+    font-size: 1rem;
+    color: #99ffbb;
+}
+
+footer{
+    width: 100%;
+    background-color: #1f2c3d;
+    color: white;
+    float: left;
+    height: auto;
+}
+
+#section_tipo{
+    width: 40%;
+}
+
+#rodape address{
+    font-size: 1.2rem;
+}
+
+#rodape .icons{
+    width: 25px;
+    padding: 0.5rem 2rem 0.5rem 0rem;
+}
+.contato{
+    display: flex;
+    align-items: center;
+    padding:0 40%;
+}
+
+.copyright{
+    padding: 0 30%;
+}
