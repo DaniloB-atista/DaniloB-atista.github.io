@@ -336,42 +336,7 @@ footer{
 
     #logo{
         transform: translateX(-50%);
-        margin-left: 0;
+        margin-left: 20px;
     }
 
-    /*capa
-    #capa{
-        height: 85%;
-    }
-
-    /*cabeçalho
-
-
-    /*sections
-    .coluna, .dois, .quatro, .cinco{
-        display: block;
-        width: 80%;
-        padding: 0;
-        margin: 10px auto;
-        float: none; 
-    }
-
-    .justify{
-        text-align: left;
-    }
-
-    .contato, .copyright{
-        display: flex;
-    }
-
-    /*rodape
-    #rodape .contato, .copyright{
-        padding: 2% 3.5%;
-    }
-    #rodape .icone{
-        padding: 0.5rem 1rem 0.5rem 0rem;
-    }
-    
-*/
 }
-
