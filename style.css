@@ -32,6 +32,7 @@ h3, h2{
     padding: 2%;
     float: left;
     color: #00070d;
+    padding-top: 90px;
 }
 
 #acao{
@@ -58,7 +59,8 @@ h3, h2{
     font-size: 16.5px;
     line-height: 28px;
     font-weight: 400;
-    letter-spacing: .5px
+    letter-spacing: .5px;
+    padding-top: 90px;
 }
 .quatro{
     padding: 0 25%;
@@ -149,11 +151,11 @@ header{
 /*menu/navbar*/
 .list-menu{
     float: right;
-    margin-right: 5%;
+    margin: 0px;
     list-style: none;
 }
 
-header .list-menu li{
+header .list-menu li {
     float: left;
     padding: 2rem .8rem;
     font-size: 18px;
@@ -161,12 +163,26 @@ header .list-menu li{
 
 header .list-menu li:hover{
     background-color: #b34700;
-    padding: 1.5rem 1rem 2.5rem 1rem;
     transition: all .4s linear;
+}
+header .list-menu li a:after{
+    content: "";
+    background: #fff;
+    width: 0%;
+    height: 5px;
+    position: relative;
+    z-index: 99999999999999;
+    border-radius: 100px;
+    transition: .5s;
+    float: left;
+}
+
+header .list-menu li:hover a:after{
+    width:100%;
 }
 
 header li a{
-    color: white
+    color: white;
 }
 /*menu responsivo*/
 header #toggle{
@@ -181,6 +197,16 @@ header label{
     visibility: hidden;
 }
 
+
+/*roalgem suave*/
+html{
+    scroll-behavior: smooth;
+ }
+ 
+
+ .left_footer{
+     text-align:center;
+ }
 
 
 /*rodape*/
@@ -215,11 +241,19 @@ footer{
     padding:0 40%;
 }
 
-.copyright{
+/*.copyright{
     padding: 0 30%;
-}
+}*/
 
 /*responsividade*/
+
+#sobre{
+    padding: 0%;
+    float: initial;
+    color: #00070d;
+    padding-top: 0px;
+}
+
 
 @media screen and (max-width: 900px){
     /*menus*/
@@ -271,12 +305,29 @@ footer{
         padding: 7% 5% 7% 10%;
     }
 
-    /*capa*/
-    #capa{
-        height: 85%;
+
+
+    .coluna.dois {
+        width:100%;
     }
 
-    /*cabeçalho*/
+    .cinco {
+        width: 100%;
+    }
+    .contato{
+        padding:0px!important;
+        display:block!important;
+    }
+    
+    #rodape .icons {
+        padding:0px!important;
+
+    }
+
+    .coluna {
+        padding:0px!important;
+    }
+
     #logodiv{
         width: 100%;
         text-align: center;
@@ -288,7 +339,15 @@ footer{
         margin-left: 0;
     }
 
-    /*sections*/
+    /*capa
+    #capa{
+        height: 85%;
+    }
+
+    /*cabeçalho
+
+
+    /*sections
     .coluna, .dois, .quatro, .cinco{
         display: block;
         width: 80%;
@@ -305,7 +364,7 @@ footer{
         display: flex;
     }
 
-    /*rodape*/
+    /*rodape
     #rodape .contato, .copyright{
         padding: 2% 3.5%;
     }
@@ -313,12 +372,6 @@ footer{
         padding: 0.5rem 1rem 0.5rem 0rem;
     }
     
-
+*/
 }
 
-
-/*
-    # para chamar ids
-    . para chamar classes
-    clear: both; cancela o efeito das floats
-*/
